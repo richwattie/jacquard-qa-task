@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "module": "ES2022",
+        "moduleResolution": "Node",
+        "baseUrl": ".",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "noUnusedLocals": true,
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "paths": {
+            "@components/*": ["./page-factory/common-components/*"],
+            "@lib/*": ["./lib/*"],
+            "@page-factory/*": ["./page-factory/*"],
+            "@pages/*": ["./page-factory/pages/*"]
+        }
+    },
+    "exclude": ["node_modules"],
+    "include": ["./lib/**/*.ts", "./page-factory/**/*.ts", "./setup/**/*.ts", "./tests/**/*.ts"]
+}
